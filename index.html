@@ -37,8 +37,9 @@
 		<div class="wrapper">
 			<div class="header__wrap">
 				<div class="logo">
-					<a href="#">bin.<span>game</span></a>
+					<a href="#"><img src="img/bingame-logo.svg" alt=""></a>
 				</div>
+				
 				<button class="navbar-toggle">
 	                <span class="bar bar1"></span>
 	                <span class="bar bar2"></span>
@@ -47,7 +48,17 @@
 	                <span class="bar bar5"></span>
 				</button>
 				<nav class="navbar">
-					
+					<div class="box-cryp dropdown">
+						<div class="select-cryp"><span>cryptobrocker</span> <svg class="icon icon-icon-arrow-down"><use xlink:href="#icon-icon-arrow-down"></use></svg></div>
+						<ul class="list-cryp dropdown-menu ">
+							<li class="list-cryp__item">
+								<a class="list-cryp__link" href="#">cryptobrocker2</a>
+							</li>
+							<li class="list-cryp__item">
+								<a class="list-cryp__link active" href="#">cryptobrocker3</a>
+							</li>
+						</ul>
+					</div>
 					<div class="box-lang dropdown">
 						<div class="select-lang"><span>Eng</span> <svg class="icon icon-icon-arrow-down"><use xlink:href="#icon-icon-arrow-down"></use></svg></div>
 						<ul class="list-lang dropdown-menu ">
@@ -92,40 +103,60 @@
 			<div class="wrap">
 				<!-- BEGIN NAV SIDEBAR -->
 				<div class="nav-sidebar">
-					<div class="nav-sidebar__title">
-						Choice Value:
-						<div class="info-block info-block--top info-block--center">
-							<span class="info-block__symbol">?</span>
-							<div class="info-block__dropdown">
-								<div class="info-block__title">What the Actibe Rounds</div>
-								<div class="info-block__text">Customer catches deliveryman sipping his milkshake on video: 'I felt really disgusted'</div>
-							</div>
-						</div>
-					</div>
-					<ul class="nav-sidebar-menu">
-						<li class="nav-sidebar-menu__item ">
-							<a href="#" class="nav-sidebar-menu__link active">BTC/USD</a>
-							<div class="info-block info-block--top">
+					<div class="nav-sidebar__inner">
+						<div class="nav-sidebar__title">
+							Contract
+							<div class="info-block info-block--top info-block--center">
 								<span class="info-block__symbol">?</span>
 								<div class="info-block__dropdown">
 									<div class="info-block__title">What the Actibe Rounds</div>
 									<div class="info-block__text">Customer catches deliveryman sipping his milkshake on video: 'I felt really disgusted'</div>
 								</div>
 							</div>
-						</li>
-						<li class="nav-sidebar-menu__item">
-							<a href="#" class="nav-sidebar-menu__link">BTC/ETH</a>
-						</li>
-						<li class="nav-sidebar-menu__item">
-							<a href="#" class="nav-sidebar-menu__link">BTC/LTC</a>
-						</li>
-						<li class="nav-sidebar-menu__item">
-							<a href="#" class="nav-sidebar-menu__link">BTC/TRX</a>
-						</li>
-						<li class="nav-sidebar-menu__item">
-							<a href="#" class="nav-sidebar-menu__link">BTC/EOS</a>
-						</li>
-					</ul>
+						</div>
+						<ul class="nav-sidebar-menu">
+							<li class="nav-sidebar-menu__item ">
+								<a href="#" class="nav-sidebar-menu__link active">ETH</a>
+							</li>
+							<li class="nav-sidebar-menu__item">
+								<a href="#" class="nav-sidebar-menu__link">TRX</a>
+							</li>
+							<li class="nav-sidebar-menu__item">
+								<a href="#" class="nav-sidebar-menu__link">EOS</a>
+							</li>
+							
+						</ul>
+					</div>
+
+					<div class="nav-sidebar__inner">
+						<div class="nav-sidebar__title">
+							Pair choice
+							<div class="info-block info-block--top info-block--center">
+								<span class="info-block__symbol">?</span>
+								<div class="info-block__dropdown">
+									<div class="info-block__title">What the Actibe Rounds</div>
+									<div class="info-block__text">Customer catches deliveryman sipping his milkshake on video: 'I felt really disgusted'</div>
+								</div>
+							</div>
+						</div>
+						<ul class="nav-sidebar-menu"> 
+							<li class="nav-sidebar-menu__item ">
+								<a href="#" class="nav-sidebar-menu__link active">BTC/USD</a>
+							</li>
+							<li class="nav-sidebar-menu__item">
+								<a href="#" class="nav-sidebar-menu__link">BTC/ETH</a>
+							</li>
+							<li class="nav-sidebar-menu__item">
+								<a href="#" class="nav-sidebar-menu__link">BTC/LTC</a>
+							</li>
+							<li class="nav-sidebar-menu__item">
+								<a href="#" class="nav-sidebar-menu__link">BTC/TRX</a>
+							</li>
+							<li class="nav-sidebar-menu__item">
+								<a href="#" class="nav-sidebar-menu__link">BTC/EOS</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 				<!-- NAV SIDEBAR EOF   -->
 
@@ -135,7 +166,7 @@
 						<!-- BEGIN GRAPHIC -->
 						<div class="col box-graphic">
 							<div class="graphic">
-								<img src="img/graphic.png" alt="">
+								<img src="img/graphic.png" alt="" class="graphic-img"> 
 							</div>
 						</div>
 						<!-- GRAPHIC EOF -->
@@ -230,7 +261,7 @@
 								<div class="switch text-right">
 									<label class="switch-block">
 										<span class="switch-block__text">Mine:</span>
-										<input type="checkbox" checked="">
+										<input type="checkbox" >
 										<span class="switch-block__checkbox">
 											<span class="switch-block__swiper">
 												<span class="on">on</span>
@@ -362,114 +393,34 @@
 								</div>
 							</div>
 							<div class="tab-cont hide" id="tab_2">
-								<div class="row">
-									<div class="col tabs-column">
-										<div class="box box-table">
-											<div class="box-table__head">
-												<div class="box-table__title">New round:</div>
-												<div class="box-progress">
-													<div class="box-progress__text">15.63 ETH</div>
-													<div class="progress">
-														<div class="progress__bar" style="width:80%;"></div>
-													</div>
-													<div class="box-progress__text">5.05 ETH</div>
-												</div>
-												<div class="rate">
-													<div class="rate__users"><svg class="icon icon-user text-danger"><use xlink:href="#icon-user"></use></svg> 15</div>
-													<div class="circle">60%</div>
-													<div class="rate__users"><svg class="icon icon-user text-success"><use xlink:href="#icon-user"></use></svg> 24</div>
-												</div>
-											</div>
-											<div class="box-table__body">
-												<table class="table">
-													<thead>
-														<tr>
-															<th>
-																<span class="hidden-xs">Avatar</span>
-																<span class="visible-xs">Ava</span>
-															</th>
-															<th class="nowrap">BET Time</th>
-															<th>
-																<span class="hidden-xs">Address</span>
-																<span class="visible-xs">Add</span>
-															</th>
-															<th>Amount</th>
-															<th class="text-center hidden-xs">Color</th>
-														</tr>
-													</thead>
-													<tbody>
-														<tr class="t-success">					  
-															<td><a href="#"><img src="img/avatar2.png" alt=""></a></td>
-															<td><span class="nowrap">16.3 12:05:37</span></td>
-															<td><div class="t-address">0x27d5075EdA</div></td>
-															<td><span class="amount">0.16</span> <svg class="icon icon-rub-white"><use xlink:href="#icon-rub-white"></use></svg></td>
-															<td class="text-center hidden-xs"><span class="marker-circle marker-circle--success"></span></td>
-														</tr>
-														
-													</tbody>
-												</table>
-											</div>
-										</div>
+								<div class="box box-table">
+									<div class="box-table__head">
+										<div class="box-table__title">New round:</div>
+										
 									</div>
-									<div class="col tabs-column">
-										<div class="box box-table">
-											<div class="box-table__head">
-												<div class="box-table__title">Going-on round:</div>
-												<div class="box-progress">
-													<div class="box-progress__text">12.55 ETH</div>
-													<div class="progress">
-														<div class="progress__bar" style="width: 80%;"></div>
-													</div>
-													<div class="box-progress__text">34.25 ETH</div>
-												</div>
-												<div class="rate">
-													<div class="rate__users"><svg class="icon icon-user text-danger"><use xlink:href="#icon-user"></use></svg> 21</div>
-													<div class="circle">60%</div>
-													<div class="rate__users"><svg class="icon icon-user text-success"><use xlink:href="#icon-user"></use></svg> 43</div>
-												</div>
-											</div>
-											<div class="box-table__body">
-												<table class="table">
-													<thead>
-														<tr>
-															<th>
-																<span class="hidden-xs">Avatar</span>
-																<span class="visible-xs">Ava</span>
-															</th>
-															<th class="nowrap">BET Time</th>
-															<th>
-																<span class="hidden-xs">Address</span>
-																<span class="visible-xs">Add</span>
-															</th>
-															<th>Amount</th>
-															<th class="text-center hidden-xs">Color</th>
-														</tr>
-													</thead>
-													<tbody>
-														<tr class="t-success">					  
-															<td><a href="#"><img src="img/avatar.png" alt=""></a></td>
-															<td><span class="nowrap">16.3 12:05:37</span></td>
-															<td><div class="t-address">0x27d5075EdA</div></td>
-															<td><span class="amount">0.16</span> <svg class="icon icon-rub-white"><use xlink:href="#icon-rub-white"></use></svg></td>
-															<td class="text-center hidden-xs"><span class="marker-circle marker-circle--success"></span></td>
-														</tr>
-														
-														<tr class="spacer">
-															<td colspan="5" style="display: none;"></td>
-														</tr>
-														<tr class="t-danger">					  
-															<td><a href="#"><img src="img/avatar3.png" alt=""></a></td>
-															<td><span class="nowrap">16.3 12:05:37</span></td>
-															<td><div class="t-address">0x27d5075EdA</div></td>
-															<td><span class="amount">0.16</span> <svg class="icon icon-rub-white"><use xlink:href="#icon-rub-white"></use></svg></td>
-															<td class="text-center hidden-xs"><span class="marker-circle marker-circle--danger"></span></td>
-														</tr>
-													</tbody>
-												</table>
-											</div>
-										</div>
+									<div class="box-table__body">
+										<table class="table">
+											<thead>
+												<tr>
+													<th>
+														<span class="hidden-xs">Avatar</span>
+														<span class="visible-xs">Ava</span>
+													</th>
+													<th class="nowrap">BET Time</th>
+													<th>
+														<span class="hidden-xs">Address</span>
+														<span class="visible-xs">Add</span>
+													</th>
+													<th>Amount</th>
+													<th class="text-center hidden-xs">Color</th>
+												</tr>
+											</thead>
+											<tbody>
+												
+											</tbody>
+										</table>
 									</div>
-								</div>
+								</div>	
 							</div>
 						</div>
 					</div>
